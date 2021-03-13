@@ -2,10 +2,11 @@
 #define TABLEROBARCOS_H
 #include <iostream>
 #include "Movimiento.hpp"
+#include "Tablero.hpp"
 
 using namespace std;
 
-class TableroBarcos{
+class TableroBarcos : public Tablero {
 	public:
 		TableroBarcos();
 		~TableroBarcos();

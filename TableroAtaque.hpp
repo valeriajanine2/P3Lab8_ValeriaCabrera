@@ -1,14 +1,16 @@
-#ifndef TABLEROARAQUE_H
+#ifndef TABLEROATAQUE_H
 #define TABLEROATAQUE_H
 #include <iostream>
 #include <vector>
 #include "Movimiento.hpp"
+#include "Tablero.hpp"
 
 using namespace std;
 
-class TableroAtaque{
+class TableroAtaque : public Tablero {
 	public:
 		TableroAtaque();
+		TableroAtaque(vector<vector<char>> celdas);
 		~TableroAtaque();
 		void Imprimir();
 		bool ValidarMovimiento(Movimiento);

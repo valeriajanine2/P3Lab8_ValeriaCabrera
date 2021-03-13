@@ -16,7 +16,7 @@ class Jugador{
 		~Jugador();
 		string getNombre();
 		void setNombre(string);
-		virtual void MovimientoJugar(TableroAtaque*) = 0;
+		virtual Movimiento Jugar(TableroAtaque*) = 0;
 		virtual void ColocarBarcos(TableroBarcos*) = 0;
 };
 

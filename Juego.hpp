@@ -1,9 +1,12 @@
-#ifndef JUEDGO_H
+#ifndef JUEGO_H
 #define JUEGO_H
 #include <iostream>
 #include <string>
 #include "TableroAtaque.hpp"
 #include "TableroBarcos.hpp"
+#include "JugadorHumano.hpp"
+#include "JugadorPC.hpp"
+#include "Jugador.hpp"
 
 using namespace std;
 

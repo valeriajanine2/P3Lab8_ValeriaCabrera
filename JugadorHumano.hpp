@@ -2,16 +2,19 @@
 #define JUGADORHUMANO_H
 #include <iostream>
 #include <string>
-#include "TableroAtaque.hpp"
-#include "TableroBarcos.hpp"
+#include "Jugador.hpp"
+#include "Movimiento.hpp"
+#include"TableroAtaque.hpp"
+#include"TableroBarcos.hpp"
 
 using namespace std;
 
-class JugadorHumano{
+class JugadorHumano:public Jugador {
 	public:
 		JugadorHumano();
-		~Jugador();
-		virtual void MovimientoJugar(TableroAtaque*);
+		JugadorHumano(string nombre);
+		~JugadorHumano();
+		virtual Movimiento Jugar(TableroAtaque*);
 		virtual void ColocarBarcos(TableroBarcos*);
 };
 

@@ -15,7 +15,7 @@ class Movimiento{
 		int getAtaqueFila();
 		void setAtaqueFila(int);
 		int getAtaqueColumna();
-		void setAtaqueFila(int);
+		void setAtaqueColumna(int);
 		void Imprimir();
 };
 
